@@ -3,9 +3,9 @@ header('Content-Type: application/json');
 
 // Configurações da API
 $config = [
-    'api_url' => 'api-url',
-    'api_key' => 'api-key',
-    'api_host' => 'api-host'
+    'api_url' => 'https://social-download-all-in-one.p.rapidapi.com/v1/social/autolink',
+    'api_key' => '12958136eemsh2d61056ab8d18a0p13380fjsn80f281aa92cf',
+    'api_host' => 'social-download-all-in-one.p.rapidapi.com'
 ];
 
 $input = json_decode(file_get_contents('php://input'), true);

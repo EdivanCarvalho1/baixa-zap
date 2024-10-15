@@ -1,0 +1,213 @@
+*{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  display: flex;
+  background-color: #005792;
+  color: white;
+  justify-content: space-between;
+  align-items:center;
+  padding: 1rem;
+}
+
+.header h1{
+  color: white;
+  font-weight: bold;
+}
+
+.header a{
+  text-decoration: none;
+  color: white;
+  margin: 0.2rem;
+}
+
+.header nav a:hover {
+  opacity: 0.5;
+}
+
+.header span{
+  background-color: white;
+  padding: 0.5rem;
+  color: #00204a;
+  font-weight: bold;
+}
+
+.card-download{
+  padding-top: 3rem;
+  display: flex;
+  flex-flow: column;
+  align-items:center;
+  background-color: #005792;
+  color: white;
+  margin: 3rem;
+  
+}
+.card-download h1{
+  text-align: center;
+  font-weight:bold;
+  font-size: 1.5rem;
+}
+.card-download h1 span{
+  display: inline-block;
+  margin: 1rem;
+  background-color: white;
+  color: #00204a;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0.3rem;
+}
+
+.card-download .url{
+  display: inline-block;
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.card-download .click-btn-down{
+  display: inline-block;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  background-color: #00204a;
+  color: white;
+  width: 8rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.card-download .click-btn-down:hover{
+  cursor: pointer;
+}
+.card-download .url-input {
+  display: inline-block;
+  background-color: white;
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+
+.card-download .link {
+  border: none;
+  width: 45rem;
+  text-align: center;
+}
+
+.card-download .link:focus {
+  outline: none;
+}
+
+.instructions-section{
+  display:flex;
+  flex-flow: column;
+  line-height: 2rem;
+  padding-bottom: 2rem;
+}
+
+.instructions-section h2{
+  text-align:center;
+  color: #222831;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.instructions-section p{
+  text-align:center;
+  color: #222831;
+  font-size: 1rem;
+}
+
+.instructions-section ul{
+  padding-left: 45rem;
+  font-size: 1rem;
+}
+.instructions-section ul li span{
+  font-weight: bold;
+}
+
+footer{
+  color: white;
+  text-align: center;
+  background-color:  #222831;
+  font-size: 0.7rem;
+  padding: 1rem;
+}
+
+.center-content{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align:center;
+  align-items:center;
+}
+
+.center-content .loading-message{
+  text-align:center;
+  margin: 1rem;
+}
+
+.center-content .title{
+  display: inline-block;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.center-content .buttondownload{
+  color:white;
+  text-decoration: none;
+  background-color: #00204a;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+@media(max-width: 640px){
+  .header h1{
+    font-size: 1rem;
+    padding
+  }
+  .header nav a{
+    display:none;
+  }
+  .card-download h1{
+    font-size: 1rem;
+
+  }
+  .card-download h1 span{
+    font-size: 2rem;
+
+  }
+
+  .card-download .link {
+    width: 16rem;
+
+  }
+
+  .center-content .buttondownload {
+    font-size: 1rem;
+    display: inline-block;
+    width: auto;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem; 
+  }
+  .instructions-section h2{
+    font-size: 1.3rem;
+  }
+  .instructions-section p{
+    font-size: 1rem;
+  }
+  .instructions-section ul{
+    margin-left: 3rem;
+  }
+
+  .instructions-section ul{
+  padding-left: 0rem;
+  font-size: 1rem;
+}
+}
