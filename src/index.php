@@ -19,13 +19,13 @@
 
 </head>
 <body>
-        <header class="header">
+        <header aria-label="Cabeçalho do Site" class="header">
             <a href="/">
                 <h1>Baixe Vídeos Facilmente <span>BaixarZap</span></h1>
-</a>
+            </a>
         </header>
         <main>
-            <div class="card-download">
+            <div aria-label="Card de Download" class="card-download">
                 <h1><span>BaixarZap</span></h1>
                 <h1>Descubra uma maneira fácil e rápida de baixar vídeos <br> do YouTube e de diversas outras
                     plataformas, como TikTok, CapCut, Facebook, <br> Instagram, Snapchat, Twitter, LinkedIn, Tumblr e
@@ -33,25 +33,25 @@
                 </h1>
                 <h1>Nosso serviço detecta automaticamente de qual plataforma é o vídeo.
                 </h1>
-                <label class="url">URL:</label>
+                <label aria-label="Insira a URL do Vídeo" class="url">URL:</label>
                 <div class="url-input">
-                     <input type="text" name="link" class="link" required>
+                     <input aria-label="Caixa de Entrada da URL do Vídeo" type="text" name="link" class="link" required>
                 </div>
                 <div class="download-video">
-                    <button class="click-btn-down">
-                       <svg width="24px" height="24px"viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 22.0002H16C18.8284 22.0002 20.2426 22.0002 21.1213 21.1215C22 20.2429 22 18.8286 22 16.0002V15.0002C22 12.1718 22 10.7576 21.1213 9.8789C20.3529 9.11051 19.175 9.01406 17 9.00195M7 9.00195C4.82497 9.01406 3.64706 9.11051 2.87868 9.87889C2 10.7576 2 12.1718 2 15.0002L2 16.0002C2 18.8286 2 20.2429 2.87868 21.1215C3.17848 21.4213 3.54062 21.6188 4 21.749" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M12 2L12 15M12 15L9 11.5M12 15L15 11.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    <button aria-label="Clique para baixar o Vídeo" class="click-btn-down">
+                       <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 22.0002H16C18.8284 22.0002 20.2426 22.0002 21.1213 21.1215C22 20.2429 22 18.8286 22 16.0002V15.0002C22 12.1718 22 10.7576 21.1213 9.8789C20.3529 9.11051 19.175 9.01406 17 9.00195M7 9.00195C4.82497 9.01406 3.64706 9.11051 2.87868 9.87889C2 10.7576 2 12.1718 2 15.0002L2 16.0002C2 18.8286 2 20.2429 2.87868 21.1215C3.17848 21.4213 3.54062 21.6188 4 21.749" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M12 2L12 15M12 15L9 11.5M12 15L15 11.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                        Baixar</button>
                 </div>
                 <div class="center-content">
-                    <div id="loadingMessage" class="loading-message" style="display:none; color:white;">O vídeo começará
+                    <div aria-label="O vídeo começará a ser baixado" id="loadingMessage" class="loading-message" style="display:none; color:white;">O vídeo começará
                         a ser baixado...</div>
                     <div id="title" class="title" style="display:none;"></div>
-                    <div id="videoThumbnail" class="thumbnail" style="display:none;"></div>
+                    <div id="videoThumbnail" class="thumbnail" aria-label="Imagem Contendo a Capa do Vídeo" style="display:none;"></div>
                     <div id="downloadLinks" class="buttondownload" style="display:none;"></div>
                 </div>
             </div>
     </div>
-    <section class="instructions-section">
+    <section aria-label="Lista de Instruções de Como baixar o Vídeo" class="instructions-section">
         <h2>Como Baixar Vídeo do YouTube</h2>
         <p>Descubra a maneira mais fácil e rápida de baixar vídeo YouTube com nosso serviço intuitivo.
             Simplifique o
@@ -116,8 +116,7 @@
     <footer>
         <p>© 2024 BaixarZap 4.0.0 (164). Todos os direitos reservados</p>
     </footer>
-    </div>
-    <script src="code.js" type="text/javascript"></script>
+    <script src="code.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
   new window.VLibras.Widget('https://vlibras.gov.br/app');

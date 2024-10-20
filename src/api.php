@@ -1,7 +1,6 @@
 <?php
 header('Content-Type: application/json');
 
-// Configurações da API
 $config = [
     'api_url' => 'https://social-download-all-in-one.p.rapidapi.com/v1/social/autolink',
     'api_key' => '12958136eemsh2d61056ab8d18a0p13380fjsn80f281aa92cf',
@@ -11,7 +10,18 @@ $config = [
 $input = json_decode(file_get_contents('php://input'), true);
 $videoUrl = $input['url'];
 
-// Inicializa o cURL
+$servername='localhost';
+$username='root';
+$password='root';
+$database='baixarzap';
+
+$conn = new mysqli($servername, $username, $password, $database);
+if ($conn->connect_error) {
+    http_response_code(500);            
+    echo json_encode(['error' => 'Erro na conexão com o banco de dados: ' . $conn->connect_error]);
+    exit();
+}
+
 $curl = curl_init();
 
 curl_setopt_array($curl, [
@@ -39,5 +49,7 @@ if ($err) {
     echo json_encode(['error' => 'Erro na requisição à API externa: ' . $err]);
 } else {
     echo $response;
+
+    $conn->query("INSERT INTO videos (url) VALUES ('" . $videoUrl . "')");
 }
 ?>
